@@ -1,0 +1,9 @@
+version: 2
+jobs:
+  shellcheck:
+    steps:
+      - checkout
+      - run:
+   	  name: Check Scripts
+   	  command: |
+   	    sh test.sh
